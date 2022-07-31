@@ -84,7 +84,7 @@ alert(email);
 let parol = prompt("Enter your password to finish");
 alert(parol);
 
-alert("Dear "login", your e-mail is "email", your password is "parol"."); */
+alert('Dear ' + login + ' , your e-mail is' + email + ' , your password is' + parol + ' .') */
 
 
 // task8
