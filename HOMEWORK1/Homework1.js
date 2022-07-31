@@ -12,7 +12,7 @@ alert("Good Luck!");
 
 let message = "Good Luck!";
 let message1 = "Good Luck all!";
-// message = message1;
+message = message1;
 console.log(message); */
 
 
