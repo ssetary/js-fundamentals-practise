@@ -88,4 +88,11 @@ alert("Dear "login", your e-mail is "email", your password is "parol"."); */
 
 
 // task8
+/* let secondInHour = Math.floor(60*60); //Math.floor - Mathematical value, where 1min-60sec.
+console.log(secondInHour);
 
+let secondInDay = Math.floor(3600*24); //Math.floor - Mathematical value, where hour-3600sec.
+console.log(secondInDay);
+
+let secondInMonth = Math.floor(3600*24*31); //Math.floor - Mathematical value, where day-86400sec.
+console.log(secondInMonth); */
