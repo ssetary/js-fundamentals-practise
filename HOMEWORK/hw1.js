@@ -14,19 +14,16 @@
 
 
 //Task4
-// const user = {
-//     message = "Hello, thats me", //string
-//     age = 44 //number
+// const newObj = {
+//     message: "Hello, that's me", //string
+//     age: 25,  //number
+//     newAge: 30,
+//     isAge: true, //boolean
+//     newAge: null, //null
+//     newMessage: undefined //underfined
 //     }; 
-   
-// let isAge = true;
-// isAge = false; //Boolean
 
-// let;
-// console.log(); //Undefined
-
-// let age = 45;
-// age = null; //null
+//     console.log(newObj);
 
 
 //task5
