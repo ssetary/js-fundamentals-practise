@@ -19,45 +19,32 @@
     // console.log(typeof res4);
     
 
-// task2
-// prompt -displaying a dialog box with a message Ok or Cancel
+// task2 
+// const a = 0;
 
-// a.
-// version1
-// const number = prompt("Please, enter number");
-// let check = number => ["even number", "odd number"][parseInt(number) & 1]; // even number or odd number
-// console.log(check(number));
-
-// version2
-// const number = prompt("Please, enter number");
-// let x = number;
-// let res = (number%2==0);
-// console.log(res);
-
-// b.
-// const number = prompt("Please check if the entered number is a multiple of 7");
-// let x = number;
-// let res = (number%7==0);
-// console.log(res);
+// if (a %2 == 0) {
+//     console.log("Number is even positive");
+// } else if (a % 7 == 0) {
+//     console.log("Number is multiple of 7");
+// } else {
+//     console.log("Is not number");
+// };
 
 
-// task3
-// const arr = [[2], ["Apple"], [2==2], [{}]];
-// arr.push(["Mango"]);
-// arr.shift([0]);
 
-// console.log(arr[0]);
-// console.log(arr[1]);
-// console.log(arr[2]);
-// console.log(arr[3]);
-// console.log(arr[4]);
-
-// prompt("Please, enter any value");
+// task3 
+// const arr = [];
+// arr.push[2, "apple", false, null]
+// console.log(arr.length);
+// arr[4] = prompt("Please, enter any value");
+// console.log(arr.length[4]);
+// arr.shift();
+// console.log(arr);
 
 
 // task4
 // let cities = ["Rome", "Lviv", "Warsaw"]; 
-// console.log(cities.join("*")); // I dont know how added "" in start and end
+// console.log(cities.join("*")); 
 
 
 // task5
@@ -66,70 +53,58 @@
 // console.log(res);
 
 
-// task6
-// prompt("Enter the length of the side of the triangle - 3");
-// prompt("Enter the length of the side of the triangle - 4");
-// prompt("Enter the length of the side of the triangle - 5");
+// task6 
+// let a = Number(prompt("Enter the length of first side"));
+// let b = Number(prompt("Enter the length of second side"));
+// let c = Number(prompt("Enter the length of third side"));
 
-// const number = prompt("Enter the length of the side 'a' of the triangle", 3);
-// let a = number; 
-// let res = number==3; 
-// console.log(res);   //value input validation 3
-
-// const number = prompt("Enter the length 'b' of the side of the triangle", 4);
-// let b = number2; 
-// let res = number2==4; 
-// console.log(res);  //value input validation 4
-
-// const number = prompt("Enter the length 'c' of the side of the triangle", 5);
-// let с = number3; 
-// let res = number3==5; 
-// console.log(res);  //value input validation 5
-
-
-// let a = 3; //Cathet
-// let b = 4; //Cathet
-// let c = 5; //Hypotenuse
-
-
-// let p = (a*b*c) / 2; 
-// let s = Math.sqrt(p*(p-a)*(p-b)*(p-c)); //formula gerona
-// console.log(s); 
-// console.log(s.toFixed(3));
-
-
-// let multiplyHypotenuse = 5**2;
-// let multiplyCathetus = ((3**2)+(4**2));
-// let rez = (multiplyHypotenuse === multiplyCathetus); 
-// console.log(rez); //teorema piphagora
-
-
-// task7
-// const time = 23;
-// switch (time) {
-//     case 23: case 24: case 1: case 2: case 3: case 4: case 5:
-//     console.log('Доброї ночі');   
-//     case 5: case 6: case 7: case 8: case 9: case 10: case 11:
-//     console.log('Доброго ранку');
-//     case 11: case 12: case 13: case 14: case 15: case 16: case 17:
-//     console.log('Доброго дня'); 
-//     case 17: case 18: case 19: case 20: case 21: case 22: case 23:
-//     console.log('Доброго вечора');   
-//     break;
-//     default:
-//     //    
-// };
-
-
-// let time = 2;
-// if (time < 5) {
-//     console.log('Доброї ночі');
-// } else if (time < 11) {
-//     console.log('Доброго ранку');
-// } else if (time < 17) {
-//     console.log('Доброго дня'); 
-// } else if (time < 23) {
-//     console.log('Доброго вечора');    
+// determining the area of ​​a triangle - formula gerona
+// Логічний оператор AND ( && ) повертає значення true якщо обидва операнда є і повертаються true false в іншому випадку.
+// if(a > 0 && b > 0 && c > 0) {
+//     let p = (a+b+c) / 2; 
+//     let s = Math.sqrt(p*(p-a)*(p-b)*(p-c)); 
+//     console.log("Triangle area is: " + s.toFixed(3));
 // } else {
-//     console.log('Доброї ночі');
+//     alert("Incorrect data");
+// }
+
+
+// check if this triangle is right triangle - teorema piphagora
+
+// if ((a*a + b*b === c*c) || (b*b + c*c === a*a) || (c*c + a*a === b*b)) {
+//     console.log*("The triangle is right triangle");
+//     } else {
+//         console.log*("The triangle isn't right triangle");
+//     }
+
+
+// task7 
+// let date = new Date();
+// let currentHour = date.getHours();
+
+// if (currentHour >= 23 || currentHour <= 5) {
+//     alert("Доброї ночі"); 
+// } else if (currentHour > 5 && currentHour <= 11) {
+//     alert("Доброго ранку");
+// } else if (currentHour > 11 && currentHour <= 17) {
+//     alert("Доброго дня");
+// } else if (currentHour > 17 && currentHour < 23) {
+//     alert("Доброго вечора");
+// } 
+
+
+
+// switch (time) {
+//     case (currentHour >= 23 || currentHour <= 5):
+//         alert("Доброї ночі");
+//     break;
+//     case (currentHour > 5 && currentHour <= 11):
+//         alert("Доброго ранку");
+//     break;
+//     case (currentHour > 11 && currentHour <= 17):
+//         alert("Доброго дня");
+//     break;  
+//     case (currentHour > 17 && currentHour < 23):
+//         alert("Доброго вечора");
+//     break; 
 // };
