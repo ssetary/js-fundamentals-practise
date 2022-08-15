@@ -56,3 +56,19 @@
 // } catch {
 //     console.log(exception);
 // };
+
+
+
+// task4
+// function showUser(id) {
+//     let args = Array.prototype.slice.call(arguments);
+//     return args.join();
+//   };
+//   console.log(showUser([7, -12, 44, 22]));
+
+// try {
+//     let result = showUser(id < 0);
+//     console.log(result("Error: ID must not be negative: -12"));
+//   } catch (exception) {
+//     console.log(exception.id);
+//   };
