@@ -10,8 +10,6 @@
 //   let s = calcRectangleArea(width, height);
 //   console.log(s);
 
-
-
 //   try {
 //     console.log(calcRectangleArea("b" * number));
 // } catch {
@@ -46,12 +44,15 @@
 // class MonthException {
 //     message = "Count the months of the year";
 //     name = "MonthException";
-// }
-// console.log(MonthException);
+// };
 
-let d = new Date();
-let n = d.getMonth();
-
-console.log(d.getMonth());
-
-// набрать в гугле метод месяцы getmonth() js примеры использования
+// const showMonthName = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// const d = new Date();
+// let name = showMonthName[d.getMonth()];
+// console.log(showMonthName[d.getMonth()]);
+ 
+//   try {
+//     console.log(showMonthName[d.getMonth(vb)]);
+// } catch {
+//     console.log(exception);
+// };
