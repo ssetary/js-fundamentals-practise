@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork6</title>
+
+</head>
+<body>
+    <h3>HomeWork6</h3>
+
+    <h4>task1</h4>
+    <div id="test">First</div>
+
+    <script>
+        document.getElementById("test").innerHTML = "Last"; //змінa вмісту HTML за допомогою властивості InnerHtml
+
+        let id = document.getElementById("test");
+        id.innerHTML = "Last";
+    </script>
+
+
+    <h4>task2</h4>
+    <img class="image" src="photo/dog.jpg">
+
+    <script>
+        document.getElementsByClassName("image")[0].src="photo/cat.jpg";
+    </script>
+
+    <h4>task3</h4>
+    <h2>Article header</h2>      
+    <div id="text">
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <p>Third paragraph</p>
+    </div>
+    <p>Another text</p>
+
+    <script>
+            let text = document.querySelectorAll('div p');
+            for(let elem of text.values()) {
+                console.log([elem.innerHTML])
+            }
+    </script>
+
+    <h4>task4</h4>
+    <ul id="list">
+            <li>Microsoft</li>
+            <li>Google</li>
+            <li>Apple</li>
+            <li>IBM</li>
+            <li>Bill Gates</li>
+          </ul>
+
+    <script>
+        let list = document.querySelectorAll('ul > li');
+        for (let elem of list) {
+
+        console.log(elem.innerHTML); 
+    }
+     </script>
+
+
+    <h4>task5</h4>
+    <h1>I'am a big header!!!</h1>
+    <div id="myDiv">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+        <li>Make</li>
+        <li>me</li>
+        <li>horizontal!</li>
+    </ul>
+    <span>Make me invisible, please!</span>
+
+    <script>
+        const h1 = document.querySelector('h1');
+        h1.style.backgroundColor = "green";
+
+        let p.child=document.getElementById("First paragraph");
+        let ctx = FirstParagraph.getContext('2d');
+
+    </script>
+
+
+    <h4>task6</h4>
+    <script>
+
+    </script>
+
+
+    <h4>task7</h4>
+        <main class="mainClass check item"> 	
+              <div id="myDiv">
+         <p>First paragraph</p>           
+       </div>
+     </main> 
+
+</main> 
+    <script>
+
+        let newDiv = document.createElement("div");
+        newDiv.innerHTML = "<p>First paragraph</p>";
+        myDiv.prepend(p);
+        let newMain = document.createElement("main");
+        newMain.className = "mainClass check item";
+        newMain.append(main);
