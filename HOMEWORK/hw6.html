@@ -28,84 +28,139 @@
         document.getElementsByClassName("image")[0].src="photo/cat.jpg";
     </script>
 
-    <h4>task3</h4>
-    <h2>Article header</h2>      
-    <div id="text">
-      <p>First paragraph</p>
-      <p>Second paragraph</p>
-      <p>Third paragraph</p>
-    </div>
-    <p>Another text</p>
+<h4>task3</h4>
+<h2>Article header</h2>      
+<div id="text">
+  <p>First paragraph</p>
+  <p>Second paragraph</p>
+  <p>Third paragraph</p>
+</div>
+<p>Another text</p>
 
-    <script>
-            let text = document.querySelectorAll('div p');
-            for(let elem of text.values()) {
-                console.log([elem.innerHTML])
-            }
-    </script>
+<script>
+        let text = document.querySelectorAll('div p');
+        for(let elem of text.values()) {
+            console.log([elem.innerHTML])
+        }
 
-    <h4>task4</h4>
-    <ul id="list">
-            <li>Microsoft</li>
-            <li>Google</li>
-            <li>Apple</li>
-            <li>IBM</li>
-            <li>Bill Gates</li>
-          </ul>
+        let elems = document.querySelectorAll("#text p");
+        for (let let i = 0; i < elems.length; i++) {
+            console.log("Selector text " + i + ": elems[i].innerHTML")
+        }
 
-    <script>
-        let list = document.querySelectorAll('ul > li');
-        for (let elem of list) {
+</script>
 
-        console.log(elem.innerHTML); 
-    }
-     </script>
+<h4>task4</h4>
+<ul id="list">
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>IBM</li>
+        <li>Bill Gates</li>
+      </ul>
 
+<script>
+    let list = document.querySelectorAll('ul > li');
+    for (let elem of list) {
 
-    <h4>task5</h4>
-    <h1>I'am a big header!!!</h1>
-    <div id="myDiv">
-        <p>First paragraph</p>
-        <p>Second paragraph</p>
-        <p>Third paragraph</p>
-        <p>Fourth paragraph</p>
-    </div>
-    <ul id="myList">
-        <li>Make</li>
-        <li>me</li>
-        <li>horizontal!</li>
-    </ul>
-    <span>Make me invisible, please!</span>
+    console.log(elem.innerHTML); 
+}
 
-    <script>
-        const h1 = document.querySelector('h1');
-        h1.style.backgroundColor = "green";
+const parentEl = getElementById("list");
+const firstEl = parentEl.childNodes[0].innerHTML;
+const lastEl = parentEl.childNodes[4].innerHTML;
+const secondEl = parentEl.childNodes[1].innerHTML;
+const fourthEl = parentEl.childNodes[3].innerHTML;
+const thirdEl = parentEl.childNodes[2].innerHTML;
 
-        let p.child=document.getElementById("First paragraph");
-        let ctx = FirstParagraph.getContext('2d');
+const firstEl = document.getElementById("list").firstChild.innerHTML;
+const lastEl = document.getElementById("list").lastChild.innerHTML;
+const secondEl = document.getElementById("list").secondChild.innerHTML;
+const fourthEl = document.getElementById("list").fourthChild.innerHTML;
+const thirdEl = document.getElementById("list").firstChild.nextSibling.nextSibling.innerHTML;
 
-    </script>
-
-
-    <h4>task6</h4>
-    <script>
-
-    </script>
+console.log(firstEl);
+console.log(lastEl);
+console.log(secondEl);
+console.log(fourthEl);
+console.log(thirdEl);
+ </script>
 
 
-    <h4>task7</h4>
-        <main class="mainClass check item"> 	
-              <div id="myDiv">
-         <p>First paragraph</p>           
-       </div>
-     </main> 
+<h4>task5</h4>
+<h1>I'am a big header!!!</h1>
+<div id="myDiv">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+</div>
+<ul id="myList">
+    <li>Make</li>
+    <li>me</li>
+    <li>horizontal!</li>
+</ul>
+<span>Make me invisible, please!</span>
+
+<script>
+    const h1 = document.querySelector('h1');
+    h1.style.backgroundColor = "green";
+
+
+    document.getElementById("myDiv").children[0].style.fontWeight = "bold";
+    document.getElementById("myDiv").children[1].style.color = "red";
+    document.getElementById("myDiv").children[2].style.textDecoration = "underline";
+    document.getElementById("myDiv").children[3].style.fontStyle = "italic";
+    document.getElementById("myList").style.listStyle = "none";
+    document.getElementById("myList").style.display = "flex";
+    document.getElementsByTagName("span")[0].style.display = "none";
+</script>
+
+
+<h4>task6</h4>
+<script>
+let a = prompt("Enter your first answer",  "");
+let b = prompt("Enter your first answer",  "");
+let inp1 = document.getElementById("input1");
+let inp2 = document.getElementById("input2");
+inp1.value = a;
+inp2.value = b;
+
+let input1Value = inp1.value;
+let input2Value = inp2.value;
+inp1.value = input2Value;
+inp2.value = input1Value;
+
+</script>
+
+<h4>task7</h4>
+    <main class="mainClass check item"> 	
+          <div id="myDiv">
+     <p>First paragraph</p>           
+   </div>
+ </main> 
 
 </main> 
-    <script>
+<script>
 
-        let newDiv = document.createElement("div");
-        newDiv.innerHTML = "<p>First paragraph</p>";
-        myDiv.prepend(p);
-        let newMain = document.createElement("main");
-        newMain.className = "mainClass check item";
-        newMain.append(main);
+    // let newDiv = document.createElement("div");
+    // newDiv.innerHTML = "<p>First paragraph</p>";
+    // myDiv.prepend(p);
+    // let newMain = document.createElement("main");
+    // newMain.className = "mainClass check item";
+    // newMain.append(main);
+
+
+
+    const x = 100;
+    document.body.innerHTML = 
+    <main class="mainClass check item"> 	
+            <div id="myDiv">
+       <p>First paragraph</p>           
+     </div>
+   </main>;
+</script>
+
+
+</body>
+</html>
